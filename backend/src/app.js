@@ -8,7 +8,7 @@ app.use(cors())
 app.use(bodyParser.json())
 
 app.get('/', (req, res) => {
-  res.json({ 2: 3 })
+  res.send('Hello Express!')
 })
 
 postsRoutes(app)
